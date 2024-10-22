@@ -8,17 +8,19 @@
     <style>
         /* General styles */
         body {
-            font-family: Arial, sans-serif;
+            
             background-color: #f4f4f4; /* Light cream background */
             margin: 0;
             padding: 0;
             color: #333; /* Dark text color for readability */
+
         }
 
         /* Header styles */
         header {
-            background-color: #6f4c3e; /* Coffee color */
-            padding: 20px;
+            background-color: #333; /* Coffee color */
+            width:1150px;
+
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -28,7 +30,7 @@
             top: 0; /* Stick to top */
             z-index: 1000; /* Ensure it stays above other elements */
             padding-left: 15px; /* Adjust left padding */
-            padding-right: 15px; /* Adjust right padding */
+            padding-right: 100px; /* Adjust right padding */
         }
 
         header h1 {
@@ -39,6 +41,7 @@
         nav {
             display: flex; /* Use flexbox for navigation */
             flex-wrap: wrap; /* Allow wrapping for smaller screens */
+            margin-right:-40px
         }
 
         nav a {
@@ -147,8 +150,8 @@
 
         /* Footer styles */
         footer {
-            background-color: #6f4c3e; /* Coffee color */
-            color: #fff; /* White text */
+            background-color:lightgrey; /* Coffee color */
+            color: #black; /* White text */
             text-align: center;
             padding: 15px;
             margin-top: 20px;
@@ -241,10 +244,9 @@
         <h1>Blogs</h1>
         <nav>
             <a href="/new_post">Create New Post</a>
-            <a href="/logout">Logout</a>
-            <a href="/">Home</a>
             <a href="/about">About</a>
             <a href="/contact">Contact</a>
+            <a href="/logout">Logout</a>
             <a href="#">
             <svg xmlns="http://www.w3.org/2000/svg" color="white" width="24" height="24" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
                 <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>

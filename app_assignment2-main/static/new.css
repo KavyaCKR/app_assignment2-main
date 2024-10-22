@@ -10,8 +10,6 @@ header{
     border-bottom: 1px solid lightgray;
     background-color: #333;
     color:whitesmoke;
-    position: fixed;
-    width: 100%;
 }
 
 .navbar ,.navbar-main{
@@ -53,18 +51,18 @@ header{
 
 main{
     display: flex;
-    padding-top: 120px ;
+    padding: 0px;
 }
 
 .sidebar{
     width: 150px;
     border-right: 1px solid #333;
     padding-right: 20px;
-    /* height: 600px; */
+    height: 600px;
     display: flex;
     padding-top: 10px;
     flex-direction: column;
-
+    align-items: center;
 }
 
 .sidebar ul{
@@ -96,51 +94,24 @@ footer {
     color: goldenrod;
     position: relative; /* Required for absolute positioning of the box */
   }
+.new{
+    margin-top: 100px;
+    margin-left: -200px;
+}
 
-#postForm{
-    display: block;
-    align-items: start;
-    padding: 10px 20px;
-    font-size: 20px;
-    border: 1px solid black;
-    margin-left: 20px;
-    width: 500px
+form {
+  text-align: center;
 }
-.postTitle ,.postCategory ,.postDescription{
-    width: 100%;
-    margin-bottom: 20px;
-    height: 30px;
-    font-size: 15px;
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
 }
-.postheading{
-    margin:0px 45%;
-}
-.postDescription{
-    height: 300px;
-}
-.content h2{
-    margin-left: 20px;
-}
-.postheading1{
-    margin: 0px 42%;
-}
-.postheading2{
-    margin: 0px 41%;
-}
-.postSubmitBtn{
-    margin: 0px 85%;
-    width: 75px;
-    height: 40px;
-    font-size: 20px;
-    border-radius: 10px;
-    background-color: #ddd;
-    color: #333;
-}
-.postSubmitBtn:hover{
-    background-color: #333;
-    color: #ddd;
-}
-.footer{
-    width:100%;
-    text-align: center;
+
+input[type="text"], textarea {
+  width: 300px; /* Adjust the width as needed */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }

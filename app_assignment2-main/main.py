@@ -134,3 +134,27 @@ async def like_post(post_id: int, request: Request):
 async def logout(request: Request):
     request.session.clear()  # Clear the session
     return RedirectResponse("/", status_code=303)
+
+@app.get("/about")
+async def new_post_form(request: Request):
+    session_user = request.cookies.get("session")
+    if not session_user:
+        return RedirectResponse("/")
+    
+    return templates.TemplateResponse("about.html", {"request": request})
+
+@app.get("/contact")
+async def new_post_form(request: Request):
+    session_user = request.cookies.get("session")
+    if not session_user:
+        return RedirectResponse("/")
+    
+    return templates.TemplateResponse("contact.html", {"request": request})
+
+@app.get("/index")
+async def new_post_form(request: Request):
+    session_user = request.cookies.get("session")
+    if not session_user:
+        return RedirectResponse("/")
+    
+    return templates.TemplateResponse("index.html", {"request": request})
